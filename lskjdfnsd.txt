@@ -1,0 +1,225 @@
+ <!-- HERO
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Servicii de livrare internațională</h1>
+                <p>De la colete mici până la transporturi mari, oferim soluții rapide și sigure la prețuri corecte.</p>
+                <button class="hero__cta">Calculează costul</button>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services">
+            <h2>Serviciile noastre</h2>
+            <div class="services__grid">
+                <div class="service__card">
+                    <img src="img/service1.jpg" alt="Livrare Express">
+                    <h3>Livrare Express</h3>
+                    <p>Transport rapid în 24–48 de ore, ideal pentru documente și colete urgente.</p>
+                </div>
+
+                <div class="service__card">
+                    <img src="img/service2.jpg" alt="Livrare Standard">
+                    <h3>Livrare Standard</h3>
+                    <p>Perfectă pentru expediții regulate, cu prețuri avantajoase și urmărire completă.</p>
+                </div>
+
+                <div class="service__card">
+                    <img src="img/service3.jpg" alt="Livrare Internațională">
+                    <h3>Livrare Internațională</h3>
+                    <p>Trimite colete în peste 100 de țări cu rețeaua noastră globală de parteneri.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <h2>Despre noi</h2>
+            <p>Suntem o companie cu peste 10 ani de experiență în domeniul transporturilor și livrărilor rapide.
+               Scopul nostru este să oferim servicii sigure, eficiente și transparente pentru fiecare client.</p>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact">
+            <h2>Trimite o cerere</h2>
+            <form class="contact__form">
+                <input type="text" placeholder="Nume complet" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Țară de destinație" required>
+                <textarea placeholder="Detalii pachet / mesaj"></textarea>
+                <button type="submit" class="header__btn">Trimite</button>
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>&copy; 2025 FromBoard Delivery — Toate drepturile rezervate.</p>
+        </footer>
+    </div>
+</body>
+</html> -->
+
+
+/* HERO SECTION */
+.hero {
+    background: url("../img/delivery.jpg") center/cover no-repeat;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 30px 0;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    border-radius: 8px;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero__content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.hero__content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.hero__cta {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero__cta:hover {
+    background-color: #005fa3;
+}
+
+/* SERVICES */
+.services {
+    background-color: #fff;
+    padding: 60px 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.services h2 {
+    text-align: center;
+    color: #0077cc;
+    margin-bottom: 40px;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service__card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.service__card:hover {
+    transform: translateY(-5px);
+}
+
+.service__card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.service__card h3 {
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+    background-color: #eaf4ff;
+    padding: 60px 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact {
+    background: #fff;
+    padding: 60px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact h2 {
+    color: #0077cc;
+    margin-bottom: 25px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact__form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact__form button {
+    align-self: center;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
